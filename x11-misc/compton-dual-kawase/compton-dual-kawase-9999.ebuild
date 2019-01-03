@@ -5,17 +5,18 @@ EAPI=6
 
 PYTHON_COMPAT=( python3_{4,5,6} )
 inherit toolchain-funcs python-r1
+inherit autotools git-r3
 
 DESCRIPTION="tryone144's fork of compton"
 HOMEPAGE="https://github.com/tryone144/compton"
-SRC_URI="https://github.com/tryone144/compton/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+EGIT_REPO_URI="https://github.com/tryone144/compton.git"
+EGIT_BRANCH="dual_kawase"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~~x86"
 IUSE="dbus +drm opengl +pcre xinerama"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
-S="${WORKDIR}/compton-${PV}"
 
 COMMON_DEPEND="${PYTHON_DEPS}
 	dev-libs/libconfig:=
