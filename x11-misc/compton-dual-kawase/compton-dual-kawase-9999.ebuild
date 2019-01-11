@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Foundation
+# Copyright 2019 lepz0r, based on Gentoo's compton ebuild https://gitweb.gentoo.org/repo/gentoo.git/tree/x11-misc/compton/compton-0.1_beta2.ebuild
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
