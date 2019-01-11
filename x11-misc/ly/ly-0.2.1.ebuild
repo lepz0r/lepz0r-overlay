@@ -12,7 +12,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 DEPEND="sys-libs/pam
-x11-base/xorg-servera
+x11-base/xorg-server
 x11-apps/xinit
 x11-apps/xauth
 sys-devel/gcc
