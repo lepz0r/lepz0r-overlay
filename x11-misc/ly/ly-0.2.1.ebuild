@@ -11,12 +11,15 @@ LICENSE="WTFPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-DEPEND="sys-libs/pam
+DEPEND="${RDEPEND}
+sys-devel/gcc
+dev-libs/inih"
+
+RDEPEND="sys-libs/pam
 x11-base/xorg-server
 x11-apps/xinit
 x11-apps/xauth
-sys-devel/gcc
-dev-libs/inih"
+"
 
 src_prepare() {
 git clone https://github.com/cylgom/termbox-next sub/termbox-next
