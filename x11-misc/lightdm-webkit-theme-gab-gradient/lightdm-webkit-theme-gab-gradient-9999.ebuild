@@ -1,4 +1,4 @@
-# Copyright 2019 Gentoo Authors
+# Copyright 2019 lepz0r
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
