@@ -35,4 +35,9 @@ addwrite /usr/lib
 addwrite /usr/bin
 addwrite /etc/lightdm
 eninja install
+useradd -r lightdm
+}
+
+pkg_postinst() {
+ewarn 'Change "greeter-user" to lightdm in /etc/lightdm/lightdm.conf before changing greeter-session to lightdm-webkit2-greeter'
 }
