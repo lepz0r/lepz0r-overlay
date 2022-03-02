@@ -1,5 +1,6 @@
 To add this repository paste this to ```/etc/portage/repos.conf/lepz0r-overlay.conf```
 
+```
 [lepz0r-overlay]
 priority = 50
 location = /var/db/repos/lepz0r-overlay
