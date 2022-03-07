@@ -2,16 +2,22 @@ EAPI=8
 
 DESCRIPTION="A small and lightweight POSIX script for using a custom fan curve in Linux for those with an Nvidia GPU. "
 HOMEPAGE="https://github.com/nan0s7/nfancurve"
-SRC_URI="https://github.com/nan0s7/nfancurve/archive/refs/tags/v019.4.tar.gz"
-
+RESTRICT="primaryuri"
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="amd64"
 
 DEPEND=""
 RDEPEND="x11-drivers/nvidia-drivers[tools]
 sys-process/procps"
 BDEPEND=""
+
+if [[ ${PV} == 9999* ]] ; then
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/nan0s7/nfancurve.git"
+else
+	SRC_URI="https://github.com/nan0s7/nfancurve/archive/refs/tags/v${PV}.tar.gz"
+	KEYWORDS="amd64"
+fi
 
 src_install() {
 mv temp.sh nfancurve
