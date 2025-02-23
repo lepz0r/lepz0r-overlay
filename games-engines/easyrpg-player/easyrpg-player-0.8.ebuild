@@ -9,7 +9,7 @@ DESCRIPTION="RPG Maker 2000/2003 and EasyRPG games interpreter"
 HOMEPAGE="https://easyrpg.org/"
 SRC_URI="https://easyrpg.org/downloads/player/${PV}/${P}.tar.xz"
 
-LICENSE="MIT"
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
