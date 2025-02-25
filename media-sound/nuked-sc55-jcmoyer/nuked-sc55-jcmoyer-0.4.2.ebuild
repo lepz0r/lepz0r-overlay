@@ -24,7 +24,12 @@ BDEPEND=""
 src_configure() {
         local mycmakeargs=(-DCMAKE_BUILD_TYPE=Release -DUSE_SYSTEM_RTMIDI=1)
 		cmake_src_configure
-	}
+}
+
+src_install() {
+	cmake_src_install
+	dolib.so ${BUILD_DIR}/libnuked-sc55-backend.so
+}
 
 pkg_postinst() {
 	einfo "To use compatible ROM set, copy ROM set into /usr/share/nuked-sc55"
