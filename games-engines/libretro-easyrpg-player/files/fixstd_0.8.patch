@@ -1,0 +1,14 @@
+diff -ur a/CMakeLists.txt b/CMakeLists.txt
+--- a/CMakeLists.txt	2023-04-30 03:40:49.000000000 +0700
++++ b/CMakeLists.txt	2025-02-09 22:56:58.837409464 +0700
+@@ -14,8 +14,8 @@
+ include(PlayerMisc)
+ include(GetGitRevisionDescription)
+ 
+-# C++14 is required
+-set(CMAKE_CXX_STANDARD 14)
++# C++17 is required
++set(CMAKE_CXX_STANDARD 17)
+ set(CMAKE_CXX_STANDARD_REQUIRED ON)
+ set(CMAKE_CXX_EXTENSIONS ON)
+ 
