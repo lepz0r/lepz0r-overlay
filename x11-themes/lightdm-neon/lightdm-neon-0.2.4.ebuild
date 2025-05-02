@@ -12,7 +12,7 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
-RDEPEND="x11-misc/web-greeter"
+RDEPEND="|| ( x11-misc/web-greeter x11-misc/nody-greeter x11-misc/nody-greeter-bin )"
 BDEPDEND="net-libs/nodejs"
 
 src_install() {
