@@ -29,6 +29,7 @@ src_configure() {
 src_install() {
 	cmake_src_install
 	dolib.so ${BUILD_DIR}/libnuked-sc55-backend.so
+	dolib.so ${BUILD_DIR}/libnuked-sc55-common.so
 }
 
 pkg_postinst() {
